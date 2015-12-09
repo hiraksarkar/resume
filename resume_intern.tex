@@ -1,0 +1,148 @@
+% LaTeX file for resume 
+% This file uses the resume document class (res.cls)
+
+\documentclass{res}
+%\usepackage[margin=1.5in]{geometry}
+%\topmargin=-0.5in
+%\oddsidemargin -.5in
+%\evensidemargin -.5in
+%\textwidth=6.0in
+%\itemsep=0in
+%\parsep=0in
+
+
+%\usepackage[margin=1.0in]{geometry}
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font
+\usepackage{color} 
+\usepackage{xspace}
+\usepackage{hyperref}
+\setlength{\textheight}{9.5in} % increase text height to fit on 1-page 
+\newcommand{\latex}{\LaTeX\xspace}
+
+\begin{document} 
+
+ \moveleft.5\hoffset\centerline{\LARGE\bf Hirak Sarkar}
+% \name{HIRAK SARKAR\\[12pt]}     % the \\[12pt] adds a blank
+				        % line after name  
+\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip    
+
+\address{8 Acorn Ln\\Stony Brook, NY-11790\\Mob No.+1 6315208131}
+\address{ email: \href{mailto:hsarkar@cs.stonybrook.edu}{hsarkar@cs.stonybrook.edu}  \\ WWW: www.hiraksarkar.com}  
+%Webpage:\color{blue}\url {http://kgec.academia.edu/HirakSarkar} }
+                                  
+\begin{resume}
+
+
+\section{Education}          
+ 
+ 
+ \vspace{-0.1in}	
+   \begin{tabbing}
+   \hspace{2.3in}\= \hspace{2.6in}\= \kill % set up two tab positions
+     {\bf Ph.D in Computer Science} \>   \>  2014 - {\it present}
+   \end{tabbing}  \vspace{-20pt}      % suppress blank line after tabbing
+  % {\bf Bachelor of Technology(Computer Science and Engineering)}  \\
+       Statistical Inference in Biological Data, {\it advisor: Prof. Rob Patro}  \\        
+       Stony Brook University, NY     \\
+ 
+ 
+ \vspace{-0.1in}	
+   \begin{tabbing}
+   \hspace{2.3in}\= \hspace{2.6in}\= \kill % set up two tab positions
+     {\bf Masters of Technology (Computer Science)}  \>     \>2011-2013 
+   \end{tabbing}  \vspace{-20pt}      % suppress blank line after tabbing
+  % {\bf Bachelor of Technology(Computer Science and Engineering)}  \\        
+       Indian Statistical Institute     \\
+       $1^{st}$ Class (Hons.) 
+
+
+\vspace{-0.1in}	
+\begin{tabbing}
+\hspace{2.3in}\= \hspace{2.6in}\= \kill % set up two tab positions
+{\bf Bachelor of Technology (Computer Science and Engineering)}  \>     \>2007-2011
+\end{tabbing}  \vspace{-20pt}      % suppress blank line after tabbing
+  % {\bf Bachelor of Technology(Computer Science and Engineering)}  \\        
+West Bengal University of Technology     \\       
+GPA: 8.88/10      \\   
+%B.Tech Thesis Topic: {\bf \color{blue} \underline {GameSAT: A Structured Approach to Combine SLS SAT Solvers}}  \\
+
+\section{Programming Languages Known}
+C,C++,Python
+
+\section{\bf Open Source Tools Used}
+Dendropy, BioNet  (Comp Bio) \\
+NLTK, Scrapy, Scikit-learn, Stanford Parser, Pandas (Data Science) \\
+
+\section{Relevant Coursework} 
+\begin{itemize}
+\item Artificial Intelligence,  Computational Biology, Analysis of Algorithms, Fundamental of Networks. (at {\it SBU})
+\item Machine Learning \& Pattern Recognition, Image Processing, Stochastic Process, Optimization Algorithms, Computer Graphics. (at {\it
+Indian Statistical Institute})
+\end{itemize}
+
+
+\section{Publications}
+\begin{itemize}
+\item{\color{blue}RapMap: A Rapid, Sensitive and Accurate Tool for Mapping RNA-seq Reads to Transcriptomes} A Srivastava, Hirak Sarkar and Rob Patro.  \href{http://dx.doi.org/10.1101/029652}{(bioRxiv Link)}, {\it submitted to RECOMB'16}.
+\item {\color{blue}``Voronoi Game on Graphs"} (Extended version) S. Bandyapadhyay, A. Banik, S. Das and H. Sarkar (in alphabetical order of surnames) {\it Journal of Theoretical Computer Science} 2015.
+\item {\color{blue}``Voronoi Game on Graphs''} .  S. Bandyapadhyay, A. Banik, S. Das and H. Sarkar (in alphabetical order of surnames) Seventh International Workshop on Algorithms and Computation (WALCOM), February 2013.
+\end{itemize}
+
+
+\section{Relevant Course Projects}
+\begin{itemize}
+ \item{ \it{IPID Header Survey:}} We used IPID headers to estimate the load over different servers, sampled from alexa
+ list. The main challenge of the project is to detect the wrapping pattern and navigate through the global vs local IPID counter. 
+ We also looked at the temporal pattern of for the different regional websites which shows interesting correlation with possible 
+ working load at the server end. \\
+ {\it Instructor: Prof. Phillipa Gill}
+ 
+ \item {{\it Classification \& Clustering of satellite images:}} We benchmarked different classification algorithms to cluster different 
+ kind of landmasses from infrared images taken by satellite. \\
+ {\it Instructor: Prof. C A Murthy}
+  
+ \item {{\it Some Geometric and Combinatorial Properties of Binary Matrices Related to
+Discrete Tomography:}} Here we are trying to decompose an image matrix into matrices
+each having orthogonal convex polygon also known as Ferrer?s digraph. An operation could
+regenerate the original image from these matrices. The methods can be applied to image and
+data compression. ({\it Masters dissertation}) 
+{\it Advisor: Prof. Bhargab B Bhattacharya \& Prof. Sandip Das}
+
+ \item 
+ {{\it GameSAT- A Structured Approach to Combine SLS SAT Solvers:}} Here we used several existing heuristic algorithms to mix up with each other in a customized probability to solve combinatorial hard problems encoded as SAT problems. We used UBCSAT framework for experimentation. \\
+({\it B.Tech dissertation}) {\it Advisor: Ashiqur KhudaBukhsh, CMU}
+
+\item{{\it \LaTeX\xspace to HTML converter:}} Implementation of \LaTeX\xspace to  HTML using LEX and YACC tool. {\it Instructor: Prof. Mandar Mitra}
+
+\item {{\it InstAntroid- A Real-time Android Media Surfer:}} We have designed intelligent searching
+  mechanism which could judge the taste of the user and instantly find out the most probable
+  result. We also have designed instant search with it in the android platform. The whole
+  algorithm is implemented on top of a music player application.
+ {\it Advisor: Kousik Dasgupta}
+ 
+ \item {{\it ISHARA- A Software Hardware Interface for Human Computer Interaction(HCI):}} We have used standard computer vision algorithms to track finger movements.OpenCV library is used with VC++ platform is used for implementation of the project.
+ 
+ \end{itemize}
+            
+\section{Experience}
+\begin{itemize}
+\item {\it Junior Research Fellow} in Department of Computer Science \& Engineering at Indian Institute of Technology, Kharagpur (IIT) 
+from July, 2013 to Sept, 2013. I was a member of Complex Network Engineering Group. I did TA-ship for Introductory Programming 
+Course in that brief stint. 
+\item {\it Visiting Researcher} at Advanced Computing \& Microelectronics Unit, Indian Statistical Institute from October, 2013 to December, 
+2013. I worked on Computational Geometry and Graph Theory
+\item  Teaching Assistant for CSE549 (Computational Biology), CSE219 (Game Programming)
+\item {\it Summer Assistantship} with Prof. Rob Patro from May, 2015 to July, 2015. We worked on Alignment free network clustering algorithm. 
+\end{itemize}
+
+\section{Awards and Honors}
+   \begin{itemize}
+   \item Awarded {\it Special CS Chair Fellowship} from Stony Brook University.
+   \item Awarded {\it Masters Scholarship} by Ministry of Statistics and Programme Implementation, Govt. of India. 
+   \item Awarded {\it NUS Research Scholarship} from National University of Singapore. ({\it Discontinued after 6 months})
+   \item Received {\color{blue} First Prize} for project ISHARA in INNOVA contest organized by Institute of Engineering and Management(IEM) Calcutta.
+   \end{itemize}
+
+\end{resume}
+\end{document}
